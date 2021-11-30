@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap');
+
+body{                                     
+	padding: 0px;  
+	margin: 0px;
+    background: url(https://fondosmil.com/fondo/54336.png);
+    background-attachment: fixed;
+}
+
+body::-webkit-scrollbar{
+    width: 7px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: rgb(52, 3, 167);
+    border-radius: 5px;
+}
+
+header{
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(164, 16, 233);
+}
+
+#titulo_header{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-family: 'Jost', sans-serif;
+    padding-left: 5px;
+}
+
+#icon_header{
+    width: 40px;
+    height: 40px;
+}
+
+.container{
+    background: rgba(255, 255, 255, .7);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: 'Jost', sans-serif;
+    border-radius: 8px;
+    padding-bottom: 40px;
+}
+
+#titulo_registro{
+    color: rgb(47, 3, 97);
+}
+
+footer{
+    background-color: rgb(164, 16, 233);
+    height: 30px;
+}
+
+#camponum, #campotext, #campotextmult, #campoemail, #campotextauto{
+    outline: none;
+    border: solid 1px #999;
+    padding: 6px;
+    width: 240px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+#campofecha, #campohora{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    width: 240px;
+    padding: 5px;
+    border: solid 1px #999;
+}
+
+.container_radio{
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+
+#camporadio1, #camporadio2, #camporadio3{
+    margin-right:  5px;
+    margin-top: 0;
+}
+
+#camporadio2, #camporadio3{
+    margin-left: 10px;
+}
+
+#campolista{
+    border: solid 1px #999;
+}
+
+input, select, textarea{
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+select{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    width: 252px;
+    padding: 6px;
+}
+
+#enviar{
+    width: 150px;
+    padding: 6px;
+    border: solid 1px #999;
+    font-family: 'Jost', sans-serif;
+    font-size: 15px;
+    background-color: rgb(5, 6, 97);
+    color: white;
+}
+
+form{
+    width: 80%;
+}
+
+form .titulos{
+    color: rgb(58, 58, 61);
+}
+
+table{
+    border: none;
+    table-layout: auto;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center; 
+}
+
+tr{
+    height: 50px;
+}
+
+textarea{
+    margin-top: 5px;
+}
+
+#campolista{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

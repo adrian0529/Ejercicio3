@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="icon" href="Imagenes/icono.png">
+</head>
+<body>
+    <header>
+        <img id="icon_header" src="Imagenes/icono.png">
+        <h3 id="titulo_header">Formularios</h3>
+    </header>
+    <div class="container">
+        <h2 id="titulo_registro">FORMULARIO</h2>
+        <form action="index.html" method="get">
+            <table>
+                <tbody>
+                    <tr>
+                        <td><label class="titulos">Identificación (Max. 10 caracteres):</label></td>
+                        <td><input type="number" id="camponum" name="campo1" placeholder="Ingrese su identificación" maxlength="10" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="titulos">Nombres (Max. 40 caracteres):</label></td>
+                        <td><input type="text" id="campotext" name="campotexto1" autocomplete="off" placeholder="Ingrese sus nombres" maxlength="40"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="titulos">Apellidos (Max. 40 caracteres):</label></td>
+                        <td><input type="text" id="campotext" name="campotexto2" autocomplete="off" placeholder="Ingrese sus apellidos" maxlength="40"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="titulos">Descripción (Max. 200 caracteres):</label></td>
+                        <td><textarea name="campotextmult" id="campotextmult" cols="30" rows="3" maxlength="200" placeholder="Ingrese una breve descripción su personalidad"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label class="titulos">Fecha de nacimiento:</label></td>
+                        <td><input type="date" id="campofecha"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="titulos">Inicio de clases (Hora):</label></td>
+                        <td><input type="time" id="campohora"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="titulos">Acepto terminos:</label></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="titulos">Género:</label></td>
+                        <td><div class="container_radio">
+                            <input type="radio" id="camporadio1" name="camporadio" value="opcion1">
+                            <label for="camporadio1">Hombre</label>
+                            <input type="radio" id="camporadio2" name="camporadio" value="opcion2">
+                            <label for="camporadio2">Mujer</label>
+                            <input type="radio" id="camporadio3" name="camporadio" value="opcion3">
+                            <label for="camporadio2">No decir</label>
+                        </div></td>
+                    </tr>
+                    <tr>
+                        <td><label class="titulos">Color favorito:</label></td>
+                        <td><input type="color"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="titulos">Email:</label></td>
+                        <td><input type="email" id="campoemail" placeholder="Ingrese su correo electrónico"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="titulos">Asignatura favorita:</label></td>
+                        <td><select name="campolista" id="campolista">
+                            <option value="seleccionaropcion" selected disabled>Seleccione una opción</option>
+                            <option value="oplista1">Matemáticas</option>
+                            <option value="oplista2">Humanidades</option>
+                            <option value="oplista3">Inglés</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label class="titulos">Deporte favorito:</label></td>
+                        <td><select name="campolista2" id="campolista" multiple>
+                            <option value="seleccionaropcion2" selected disabled>Seleccione una o varias opciones</option>
+                            <option value="oplistam1">Fútbol</option>
+                            <option value="oplistam2">Baloncesto</option>
+                            <option value="oplistam3">Natación</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label class="titulos">Institución Educativa (IE)</label></td>
+                        <td><input type="text" id="campotextauto" name="campotextoauto" autocomplete="on" placeholder="Ingrese su IE"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Enviar" id="enviar"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        <!--<form>
+            <table>
+            <label class="titulos">Campo numérico:</label><br>
+            <input type="number" id="camponum" name="campo1" placeholder="Ingrese número" maxlength="10" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"><br><br>
+            <label class="titulos">Campo texto 1</label><br>
+            <input type="text" id="campotext" name="campotexto1" autocomplete="off" placeholder="Ingrese texto" maxlength="40"><br><br>
+            <label class="titulos">Campo texto 2:</label><br>
+            <input type="text" id="campotext" name="campotexto2" autocomplete="off" placeholder="Ingrese texto" maxlength="40"><br><br>
+            <label class="titulos">Campo texto multi línea:</label><br>
+            <textarea name="campotextmult" id="campotextmult" cols="30" rows="3" maxlength="200" placeholder="Ingrese texto"></textarea><br>
+            <label class="titulos">Campo fecha:</label><br>
+            <input type="date" id="campofecha"><br><br>
+            <label class="titulos">Campo hora:</label><br>
+            <input type="time" id="campohora"><br><br>
+            <label class="titulos">Campo casilla:</label><br>
+            <input type="checkbox"><br><br>
+            <label class="titulos">Campo radio:</label><br>
+            <div class="container_radio">
+                <input type="radio" id="camporadio1" name="camporadio" value="opcion1">
+                <label for="camporadio1">Opción 1</label>
+                <input type="radio" id="camporadio2" name="camporadio" value="opcion2">
+                <label for="camporadio2">Opción 2</label>
+                <input type="radio" id="camporadio3" name="camporadio" value="opcion3">
+                <label for="camporadio2">Opción 3</label>
+            </div><br>
+            <label class="titulos">Campo color:</label><br>
+            <input type="color"><br><br>
+            <label class="titulos">Campo email:</label><br>
+            <input type="email" id="campoemail"><br><br>
+            <label class="titulos">Campo lista:</label><br>
+            <select name="campolista" id="campolista">
+                <option value="seleccionaropcion" selected disabled>Seleccione una opción</option>
+                <option value="oplista1">Opción 1</option>
+                <option value="oplista2">Opción 2</option>
+                <option value="oplista3">Opción 3</option>
+            </select> <br><br>
+            <label class="titulos">Campo lista múltiple:</label><br>
+            <select name="campolista2" id="campolista" multiple>
+                <option value="seleccionaropcion2" selected disabled>Seleccione una o varias opciones</option>
+                <option value="oplistam1">Opción 1</option>
+                <option value="oplistam2">Opción 2</option>
+                <option value="oplistam3">Opción 3</option>
+            </select> <br><br>
+            <label class="titulos">Campo texto autocompletar</label><br>
+            <input type="text" id="campotextauto" name="campotextoauto" autocomplete="on" placeholder="Ingrese texto"><br><br>
+            <input type="submit" value="Enviar" id="enviar"><br><br>
+        </table>
+        </form> -->
+    </div>
+    <footer>
+    </footer>
+</body>
+</html>
